@@ -10,7 +10,7 @@ public class Demo {
 		WebDriver driver=new ChromeDriver();
 		String URL="https://www.facebook.com/";
 		driver.navigate().to(URL);
-		driver.findElement(By.linkText("Forgotton password?")).click();
+		driver.findElement(By.linkText("Forgotten password?")).click();
 		Thread.sleep(1000);
 		driver.navigate().refresh();
 		Thread.sleep(1000);

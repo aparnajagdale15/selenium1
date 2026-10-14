@@ -11,6 +11,7 @@ public class DownloadFile2 {
 		driver.get(baseURL);
 		driver.findElement(By.id("downloadButton")).click();
 		Thread.sleep(2000);
+		
 		driver.close();
 		
 

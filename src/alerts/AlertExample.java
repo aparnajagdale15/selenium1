@@ -20,7 +20,7 @@ public class AlertExample {
 		Thread.sleep(5000);
 		
 		 // 2️⃣ Confirm Alert - dismiss()
-		driver.findElement(By.xpath("//button[text()='//button[text()='Click for JS Confirm']']")).click();
+		driver.findElement(By.xpath("//button[text()='Click for JS Confirm']")).click();
 		Alert alert2=driver.switchTo().alert();
 		System.out.println("Confirm alert text: " +alert2.getText());
 		Thread.sleep(2000);
@@ -28,7 +28,7 @@ public class AlertExample {
 		Thread.sleep(5000);
 		
 		 // 3️⃣ Prompt Alert - sendKeys()
-		driver.findElement(By.xpath("//button[text()='//button[text()='Click for JS Prompt']']")).click();
+		driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
 		Alert alert3=driver.switchTo().alert();
 		System.out.println("Prompt Alert Text: " +alert3.getText());
 		alert3.sendKeys("Hello Selenium"); //Enter text
